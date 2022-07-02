@@ -1,0 +1,101 @@
+body {
+  background-color: #A09EF0;
+  color: white;
+}
+
+  .darkMode {
+    background-color: #2A2C2E;
+  }
+
+.App-scrollLock {
+  overflow: hidden;
+}
+
+.App-typedFix {
+  min-height: 1.5em;
+  text-align: center;
+  padding: 0em 0.2em 0em 0.2em;
+}
+
+.App-backImg {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #5C5DB8;
+}
+
+.App-dropShadow {
+  filter: drop-shadow(3px 4px 2px #474747);
+}
+
+.App-backMaxHeight {
+  height: 100vh;
+}
+
+.App-zIndex-1 {
+  z-index: 1;
+}
+
+.App-zIndex-2 {
+  z-index: 2;
+}
+
+.App-backImg-1-light {
+  background-image: url("./data/production/background-img/backImg-1.1-light.jpg");
+  min-height: 100vh;
+}
+  .App-backImg-1_1-light {
+    background-image: url("./data/production/background-img/backImg-1.1-light.jpg");
+    min-height: 100vh;
+  }
+.App-backImg-1-dark {
+  background-image: url("./data/production/background-img/backImg-1-dark.jpg");
+  min-height: 100vh;
+}
+
+.App-backImg-2-light {
+    background-image: url("./data/production/background-img/backImg-2-light.jpg");
+    min-height: 12em;
+}
+.App-backImg-2-dark {
+    background-image: url("./data/production/background-img/backImg-2-dark.jpg");
+    min-height: 12em;
+}
+
+.App-backImg-3-light {
+    background-image: url("./data/production/background-img/backImg-3-light.jpg");
+    min-height: 12em;
+}
+.App-backImg-3-dark {
+    background-image: url("./data/production/background-img/backImg-3-dark.jpg");
+    min-height: 12em;
+}
+
+.App-backImg-4-light {
+  background-image: url("./data/production/background-img/backImg-1-light.jpg");
+}
+.App-backImg-4-dark {
+  background-image: url("./data/production/background-img/backImg-1-dark.jpg");
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(212, 199, 199);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
