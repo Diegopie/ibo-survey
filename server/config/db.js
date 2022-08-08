@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 async function db() {
     try {
-        mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/ibo-survey', {
+        mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/hot-new-app', {
             useNewUrlParser: true,
             useUnifiedTopology: true,
             useFindAndModify: false,
