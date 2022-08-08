@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import { useGlobalContext } from '../../utils/GlobalContext';
+import { useGlobalContext } from '../../context/GlobalContext';
+import DarkContentHook from '../../hooks/DarkContentHook';
 import DarkToggler from '../helper/DarkToggler/DarkToggler';
 import './Intro.css';
 
@@ -8,10 +9,12 @@ const Intro = (props) => {
     // Get Value of Dark Mode
     const [{ darkMode }, dispatch] = useGlobalContext();
 
+    const [backImg, ] = DarkContentHook('App-backImg-1-dark', 'App-backImg-1-light')
+
     // Set Classes Based On darkMode Value
-    const [backImg, setBackImg] = useState(() => {
-        return (darkMode ? 'App-backImg-1-dark' : 'App-backImg-1-light')
-    })
+    // const [backImg, setBackImg] = useState(() => {
+    //     return (darkMode ? 'App-backImg-1-dark' : 'App-backImg-1-light')
+    // })
 
     // Update State On Toggle and Save Boolean Value to Local Storage For Persisting User Choice on Refresh
     const handleToggle = () => {
@@ -28,9 +31,9 @@ const Intro = (props) => {
     useEffect(() => {
         if (darkMode) {
             document.querySelector('#toggler').checked = true;
-            setBackImg('App-backImg-1-dark');
+            // setBackImg('App-backImg-1-dark');
         } else {
-            setBackImg('App-backImg-1-light');
+            // setBackImg('App-backImg-1-light');
         }
     }, [darkMode])
 

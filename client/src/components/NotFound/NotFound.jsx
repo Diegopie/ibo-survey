@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { useGlobalContext } from '../../utils/GlobalContext';
+import { useGlobalContext } from '../../context/GlobalContext';
 import './NotFound.css';
 
 const NotFound = (props) => {

@@ -8,11 +8,11 @@ import NotFoundPage from './pages/NotFoundPage';
 // Import Components
 
 // Import Utils/Data
-import { useGlobalContext } from './utils/GlobalContext';
+import { useGlobalContext } from './context/GlobalContext';
 // CSS
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css';
-import ScrollHook from './utils/ScrollHook';
+import ScrollHook from './hooks/ScrollHook';
 
 function App() {
 
