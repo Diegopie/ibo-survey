@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { useGlobalContext } from '../../../context/GlobalContext';
+import { useGlobalContext } from '../../context/GlobalContext';
 import './DarkToggler.css';
 
 const DarkToggler = (props) => {

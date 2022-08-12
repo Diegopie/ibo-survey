@@ -1,6 +1,6 @@
 import React from 'react';
 import DarkContentHook from '../../hooks/DarkContentHook';
-import DarkToggler from '../helper/DarkToggler/DarkToggler';
+import DarkToggler from '../../layouts/DarkToggler/DarkToggler';
 import './Intro.css';
 
 const Intro = (props) => {
